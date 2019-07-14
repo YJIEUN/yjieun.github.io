@@ -2,7 +2,7 @@
 layout: post
 title:  "Ch.2 의미있는 이름"
 date:   2019-07-14
-categories: CleanCode 변수명 규칙
+categories: CleanCode 변수명규칙
 ---
 
 ** 이름을 잘 짓는 규칙 **
