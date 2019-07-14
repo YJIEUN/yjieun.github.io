@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ch.2 의미있는 이름"
-date:   2019-07-14
+date:   2019-07-14 21:03:36 +0530
 categories: CleanCode 변수명규칙
 ---
 
