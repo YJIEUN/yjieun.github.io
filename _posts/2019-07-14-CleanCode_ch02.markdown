@@ -5,9 +5,9 @@ date:   2019-07-14 21:03:36 +0530
 categories: CleanCode 변수명규칙
 ---
 
-** 이름을 잘 짓는 규칙 **
+\** 이름을 잘 짓는 규칙 \**
 
-**\# 의도를 분명히 밝혀라 **
+**\# 의도를 분명히 밝혀라**
  - 이름에서 변수(함수 or 클래스)의 존재 이유, 수행 가능, 사용 방법을 파악할 수 있어야 한다.  
   (ex) 경과 시간 (단위:날짜)  
   int d; -> int elapsedTimeInDays;  
@@ -25,7 +25,7 @@ categories: CleanCode 변수명규칙
     }
     return list1;
 }
- ```  
+ ```
  
  ```java
  // Good
@@ -56,16 +56,15 @@ categories: CleanCode 변수명규칙
  (ex) genymdhns -> generation Timestamp
 
 **\# 검색하기 쉬운 이름을 사용하라**
- - 변수나 상수를 코드 여러 곳에서 사용한다면 검색하기 쉬운 이름이 좋다.
-  : 길이가 긴 이름
+ - 변수나 상수를 코드 여러 곳에서 사용한다면 검색하기 쉬운 이름이 좋다. (길이가 긴 이름)
 
 **\# 인코딩을 피하라**
  - 헝가리식 표기법 
   - 변수 이름에 타입을 적지 말자
  - 멤버 변수 접두어 : m_
  - 인터페이스 클래스와 구현 클래스  
-   (둘 중 하나를 인코딩 한다면 구현 클래스 이름을 인코딩하자. 
-      인터페이스 클래스 : ShapeFactory
+   (둘 중 하나를 인코딩 한다면 구현 클래스 이름을 인코딩하자.     
+      인터페이스 클래스 : ShapeFactory        
       구현 클래스 : IshapeFactory -> ShapeFactoryImP or CshapeFactory)
 
 **\# 자신의 기억력을 자랑하지 마라**
@@ -128,7 +127,7 @@ private void printGuessStatistics(char candidate, int count) {
     print(guessMessage);
 }
   ```
-    
+  
   ```java
   // Good
 public class GuessStatisticsMessage {
