@@ -5,8 +5,6 @@ date:   2019-07-14 21:03:36 +0530
 categories: CleanCode 변수명규칙
 ---
 
-\*\* **이름을 잘 짓는 규칙** \*\*
-
 **\# 의도를 분명히 밝혀라**
  - 이름에서 변수(함수 or 클래스)의 존재 이유, 수행 가능, 사용 방법을 파악할 수 있어야 한다.  
   (ex) 경과 시간 (단위:날짜)  
@@ -25,7 +23,9 @@ categories: CleanCode 변수명규칙
     }
     return list1;
 }
- ```   
+ ```  
+ 
+ 
  ```java
  // Good
  public List<int[]> getFlaggedCells() {
@@ -126,6 +126,8 @@ private void printGuessStatistics(char candidate, int count) {
     print(guessMessage);
 }
   ```  
+  
+  
   ```java
   // Good
 public class GuessStatisticsMessage {
