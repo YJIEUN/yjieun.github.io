@@ -2,7 +2,7 @@
 layout: post
 title:  "Ch.3 함수"
 date:   2019-07-31 21:03:36 +0530
-categories: CleanCode 함수
+categories: CleanCode 함수생성규칙
 ---
 
 **\# 작게 만들어라!**
@@ -20,31 +20,33 @@ categories: CleanCode 함수
 
 **\# 서술적인 이름을 사용하라!**  
   " 코드를 읽으면서 짐작했던 기능을 각 루틴이 그대로 수행했다면 깨끗한 코드라 불러도 되겠다. "
- - 모듈 내에서 함수 이름은 같은 문구, 명사, 동사를 사용한다. (일관성)
-(ex)  includeSetupAndTeardownPages, includeSetupPages, includeSuiteSetupPage, includeSetupPage
+ - 모듈 내에서 함수 이름은 같은 문구, 명사, 동사를 사용한다. (일관성)  
+    (ex) includeSetupAndTeardownPages, includeSetupPages, includeSuiteSetupPage, includeSetupPage
 
 
 **\# 함수 인수**
  - 이상적인 인수 개수는 0개(무항)이다. 인수가 많을 수록 함수를 이해하기 어렵다. 
  - 플래그 인수, 함수로 Boolean값을 넘기는 관례는 끔찍하다.
- - 인수가 2-3개가 필요하다면 일부를 클래스 변수로 선언할 가능성을 고려한다. 
+ - 인수가 2-3개가 필요하다면 일부를 클래스 변수로 선언할 가능성을 고려한다.  
     (ex) Circle makeCircle(double x, double y, double radius);
     -> Circle makeCircle(Point center, double radius);
- - 단항 함수는 함수와 인수가 동사/명사 쌍을 이뤄야한다.
+ - 단항 함수는 함수와 인수가 동사/명사 쌍을 이뤄야한다.  
     (ex) write(name) -> writeField(name)
- - 함수 이름에 인수를 추가하면 인수 순서를 기억할 필요가 없다.
+ - 함수 이름에 인수를 추가하면 인수 순서를 기억할 필요가 없다.  
     (ex) assertEquals -> assertExpectedEqualsActual(expected, actual);
 
 
 **\# 명령과 조회를 분리하라!**
- - 객체상태를 변경하거나 아니면 객체 정보를 반환하거나 둘 중 하나만 해야 한다. 
-    (ex) attribute인 속성을 찾아 속성값을 value로 설정하면 true, 실패하면 false를 반환한다.
+ - 객체상태를 변경하거나 아니면 객체 정보를 반환하거나 둘 중 하나만 해야 한다.
+  
+  (ex) attribute인 속성을 찾아 속성값을 value로 설정하면 true, 실패하면 false를 반환한다.
 
 ```java
   //bad
   Public boolean set(String attribute, String value);
   if(set("usename", "unclebob"))…   //의미 모호
-```
+```  
+
   
 ```java
 //good
