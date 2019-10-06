@@ -23,13 +23,14 @@ categories: CleanCode 객체&자료구조
 	- f가 생성한 객체
 	- f인수로 넘어온 객체
 	- C인스턴스 변수에 저장된 객체  
-#
+
 - 디미터 법칙을 어기는 코드
- 1. 기차 충돌
- (ex)final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();
- 2. 잡종 구조 : 절반은 객체, 절반은 자료 구조
- 3. 구조체 감추기
+	- 기차 충돌  
+		(ex)final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath(); 	
+
+	- 잡종 구조 : 절반은 객체, 절반은 자료 구조
+	- 구조체 감추기
 
 **자료 전달 객체**
-공개 변수만 있고 함수가 없는 클래스, 이런 자료 구조체를 DTO(Data Transfer Object)라고 한다. 일반적인 형태는 빈(bean)구조다.
+ - 공개 변수만 있고 함수가 없는 클래스, 이런 자료 구조체를 DTO(Data Transfer Object)라고 한다. 일반적인 형태는 빈(bean)구조다.
 DTO의 특수한 형태인 활성 레코드는 공개 변수가 있거나 비공개 변수에 get/set함수가 있는 자료 구조이다. 그리고 대게 save나 find와 같은 탐색 함수도 제공한다. 활성 레코드는 자료 구조로만 취급해야 한다. 활성 레코드에 비즈니스 규칙 메소드를 추가하면 자료 구조도 아니고 객체도 아닌 잡종 구조가 나오기 때문이다.
