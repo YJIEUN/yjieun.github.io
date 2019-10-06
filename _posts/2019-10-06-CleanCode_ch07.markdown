@@ -6,8 +6,8 @@ categories: CleanCode 오류처리
 ---
 
 **\#오류 코드보다 예외를 사용하라**
-- 예외를 사용하자. 
- : 오류 처리 코드를 따로 분리해 코드가 더 깔끔해진다.
+- 오류가 발생하면 예외를 던지는 편이 낫다. 
+- 논리가 오류 처리 코드와 따로 분리되어 호출자 코드가 더 깔끔해진다.
  
 **\#Try-Catch-Finally문부터 작성하라**
 - 예외가 발생할 코드를 짤 때는 try-catch-finally문으로 시작하는 편이 낫다.
@@ -25,6 +25,7 @@ categories: CleanCode 오류처리
 
 **\#null을 반환하지 마라**
 ```
+//null 반환
  List<Employee> employees = getEmployees();
  if (employees != null){
    for (Employee e : employees){
@@ -34,6 +35,7 @@ categories: CleanCode 오류처리
 ```  
 
 ```
+ //빈 리스트 반환
  List<Employee> employees = getEmployees();
    for (Employee e : employees){
      totalPay += e.getPay();

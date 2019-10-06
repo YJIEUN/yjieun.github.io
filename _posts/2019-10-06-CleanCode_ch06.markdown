@@ -25,7 +25,7 @@ categories: CleanCode 객체&자료구조
 	- C인스턴스 변수에 저장된 객체  	
 - 디미터 법칙을 어기는 코드
 	- 기차 충돌  
-		(ex)final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath(); 	
+		(ex)final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();
 	- 잡종 구조 : 절반은 객체, 절반은 자료 구조
 	- 구조체 감추기
 
