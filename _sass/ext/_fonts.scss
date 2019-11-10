@@ -20,7 +20,7 @@
 }
 */
  
- [class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]:before, [class*=" icon-"]:before, [class*=" fa-2x"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
