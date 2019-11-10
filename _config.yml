@@ -21,7 +21,8 @@ plainwhite:
   social_links:
     #twitter: thelehhman
     github:  YJIEUN/yjieun.github.io
-    linkedIn: https://yjieun.github.io/
+    home: https://yjieun.github.io/
+    #linkedIn: 
     rss: rss
     # dribbble: jekyll
     # facebook: jekyll
